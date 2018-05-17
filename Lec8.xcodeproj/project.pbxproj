@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D9D5B6120ADB2BC007A78C1 /* sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9D5B6020ADB2BC007A78C1 /* sound.wav */; };
 		6DD0744A20AD56420004E142 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD0744920AD56420004E142 /* AppDelegate.swift */; };
 		6DD0744C20AD56420004E142 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD0744B20AD56420004E142 /* ViewController.swift */; };
 		6DD0744F20AD56420004E142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD0744D20AD56420004E142 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D9D5B6020ADB2BC007A78C1 /* sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound.wav; sourceTree = "<group>"; };
 		6DD0744620AD56420004E142 /* Lec8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lec8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD0744920AD56420004E142 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DD0744B20AD56420004E142 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		6DD0744820AD56420004E142 /* Lec8 */ = {
 			isa = PBXGroup;
 			children = (
+				6D9D5B6020ADB2BC007A78C1 /* sound.wav */,
 				6DD0744920AD56420004E142 /* AppDelegate.swift */,
 				6DD0744B20AD56420004E142 /* ViewController.swift */,
 				6DD0744D20AD56420004E142 /* Main.storyboard */,
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DD0745420AD56430004E142 /* LaunchScreen.storyboard in Resources */,
+				6D9D5B6120ADB2BC007A78C1 /* sound.wav in Resources */,
 				6DD0745120AD56430004E142 /* Assets.xcassets in Resources */,
 				6DD0744F20AD56420004E142 /* Main.storyboard in Resources */,
 			);
@@ -275,7 +279,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA3LC47ZM3;
 				INFOPLIST_FILE = Lec8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = student.roey.honig.Lec8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +295,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA3LC47ZM3;
 				INFOPLIST_FILE = Lec8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = student.roey.honig.Lec8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
