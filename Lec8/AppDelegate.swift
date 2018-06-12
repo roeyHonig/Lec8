@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // increment
+        let defults = UserDefaults.standard
+        
+        guard let lunchedAtLeastOnce = defults.string(forKey: "lunchedAtLeastOnce") else {
+            defults.set("no", forKey: "lunchedAtLeastOnce")
+            return true
+        }
+        //print("did this application run, at leat once? \(lunchedAtLeastOnce)")
+        defults.set("yes", forKey: "lunchedAtLeastOnce")
         return true
     }
 

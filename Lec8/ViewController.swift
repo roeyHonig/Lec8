@@ -56,7 +56,28 @@ class ViewController: UIViewController {
         }) { (isComplete) in
             //TODO: we can cheack with the bollean "isComplete" if the animation ended
             // and do something like switch to another ViewController
-            self.player.play()
+            
+            let defults = UserDefaults.standard
+            guard let lunchedAtLeastOnce = defults.string(forKey: "lunchedAtLeastOnce") else {
+                // This is the first time running the App
+                // TODO: show the Quick Guide screen
+                self.player.play()
+                return
+            }
+            
+            if lunchedAtLeastOnce == "no" {
+                // This is the first time running the App
+                // TODO: show the Quick Guide screen
+                defults.set("yes", forKey: "lunchedAtLeastOnce")
+                self.player.play()
+            } else {
+                print("did this application run, at leat once? \(lunchedAtLeastOnce) , no Mr T sound for you!!!")
+                
+            }
+            
+            return
+            
+            
         }
         
         loadData()
